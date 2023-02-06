@@ -82,9 +82,9 @@ func (c *Conn) Hijack() *pgx.Conn {
 }
 
 func deadlineCheck(ctx context.Context, sql string) {
-	debug.PrintStack()
 	if _, ok := ctx.Deadline(); !ok {
 		fmt.Println("No deadline for query", sql)
+                debug.PrintStack()
 	}
 }
 
