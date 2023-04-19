@@ -19,3 +19,5 @@ require (
 	go.uber.org/zap v1.13.0
 	gopkg.in/inconshreveable/log15.v2 v2.0.0-20180818164646-67afb5ed74ec
 )
+
+replace github.com/jackc/pgconn => github.com/connorgorman/pgconn v0.0.0-20230419194742-b3b787f5a8b6
